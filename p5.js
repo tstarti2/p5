@@ -1,7 +1,7 @@
 /*
     CIT 281 Project 5:
 
-    Name: Your Name
+    Name: Tyler Startin
 */
 
 // IMPORTANT: Note no object deconstruction when importing a class

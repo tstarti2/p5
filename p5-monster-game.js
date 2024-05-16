@@ -21,8 +21,14 @@ module.exports = class MonsterGame {
   }
 
   // List monsters
-  listMonsters = () => console.log('You must write this method')
-
+  listMonsters = () => {
+    this.monsters.forEach(monster => {
+      const { monsterName, minimumLife, currentLife, convertAlive } = monster
+      console.log(
+        `Monster: ${monsterName}, Minimum Life: ${minimumLife}, Current Life: ${currentLife}, Status: ${convertAlive}`
+      )
+    })
+  }
   // Create monsters from monster information
   createMonsters = (monsterList = []) => {
     this.monsters = monsterList.map(monster => new Monster(monster))
